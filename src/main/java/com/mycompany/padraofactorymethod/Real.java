@@ -14,7 +14,7 @@ public class Real extends Moeda {
 
     @Override
     public double getCotacao() {
-        return super.cotacao * 4.15;
+        return super.cotacao / 4.15;
     }
 
 }

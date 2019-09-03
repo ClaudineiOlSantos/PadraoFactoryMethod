@@ -13,7 +13,7 @@ public class PesoArgentino extends Moeda {
     
     @Override
     public double getCotacao() {
-        return super.cotacao * 55.7;
+        return super.cotacao / 55.7;
     }
     
 }

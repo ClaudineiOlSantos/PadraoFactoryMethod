@@ -1,5 +1,6 @@
 package com.mycompany.padraofactorymethod;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class TestaMoeda {
@@ -10,6 +11,8 @@ public class TestaMoeda {
      * @param args 
      */
     public static void main(String[] args) {
+        DecimalFormat df=new DecimalFormat("##.####");
+        
         ArrayList<Moeda> moedas = new ArrayList();
         moedas.add(MoedaFactory.criaMoeda(Pais.ARGENTINA));
         moedas.add(MoedaFactory.criaMoeda(Pais.BRASIL));
@@ -17,7 +20,7 @@ public class TestaMoeda {
         moedas.add(MoedaFactory.criaMoeda(Pais.ESTADO_SUNIDOS));
 
         moedas.forEach((m) -> {
-            System.out.println("Nome:" + m.getNome() + ", Símbolo:" + m.getSimbolo() + ", Cotação do dia em relação ao Dólar Americano:" + m.getCotacao());
+            System.out.println("Nome:" + m.getNome() + ", Símbolo:" + m.getSimbolo() + ", Cotação do dia em relação ao Dólar Americano:" + df.format(m.getCotacao()));
         });
     }
 }

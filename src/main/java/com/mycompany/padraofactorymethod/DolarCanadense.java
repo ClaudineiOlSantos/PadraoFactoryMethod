@@ -13,7 +13,7 @@ public class DolarCanadense extends Moeda {
 
     @Override
     public double getCotacao() {
-        return super.cotacao * 1.33;
+        return super.cotacao / 1.33;
     }
 
 }
