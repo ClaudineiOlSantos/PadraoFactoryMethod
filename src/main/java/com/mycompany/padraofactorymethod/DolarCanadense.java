@@ -1,8 +1,8 @@
 package com.mycompany.padraofactorymethod;
 
-public class DolarCanadence extends Moeda {
+public class DolarCanadense extends Moeda {
 
-    public DolarCanadence() {
+    public DolarCanadense() {
         super.setNome("Dólar Canadense");
     }
 

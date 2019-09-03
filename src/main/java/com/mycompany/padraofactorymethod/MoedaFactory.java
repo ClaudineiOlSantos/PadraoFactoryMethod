@@ -22,7 +22,7 @@ public class MoedaFactory {
             case BRASIL:
                 return new Real();
             case CANADA:
-                return new DolarCanadence();
+                return new DolarCanadense();
             default:
                 return new DolarAmericano();
         }
