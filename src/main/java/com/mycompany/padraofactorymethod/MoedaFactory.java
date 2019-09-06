@@ -9,9 +9,6 @@ public class MoedaFactory {
      * lógica. Desta forma a família de moedas pode crescer mas a criação de
      * novos objetos continuará simples.
      *
-     * Ainda acho que deveria ter uma loop para decidir qual tipo de moeda
-     * instanciar, mas vamos aguardar até que o Professor Daniel de seu parecer.
-     *
      * @param className
      * @return
      * @throws java.lang.ClassNotFoundException
